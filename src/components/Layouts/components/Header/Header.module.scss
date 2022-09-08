@@ -102,7 +102,10 @@
     align-items: center;
 }
 
-.options {
+.more {
+    cursor: pointer;
+    padding: 6px;
     font-size: 2rem;
-    margin-left: 16px;
+    margin-left: 28px;
+    background-color: transparent;
 }

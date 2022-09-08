@@ -9,6 +9,7 @@ function Button({
     href,
     primary,
     outline,
+    onlyText,
     disable,
     rounded,
     leftIcon,
@@ -17,6 +18,7 @@ function Button({
     large,
     children,
     onClick,
+    className,
     ...passProps
 }) {
     let Comp = 'button';
@@ -42,8 +44,10 @@ function Button({
         rightIcon,
         primary,
         outline,
+        onlyText,
         small,
         large,
+        [className]: className,
     });
 
     return (
