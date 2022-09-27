@@ -21,6 +21,7 @@ import {
     MessageIcon,
     ProfileIcon,
     SettingsIcon,
+    UploadIcon,
 } from '~/components/Icons/Icons';
 import Search from '../Search/Search';
 import config from '~/config/config';
@@ -108,7 +109,7 @@ function Header() {
                         <>
                             <Tippy delay={[0, 100]} content="Upload video" placement="bottom">
                                 <button className={cx('action-btn')}>
-                                    <FontAwesomeIcon icon={faArrowUpFromBracket} />
+                                    <UploadIcon />
                                 </button>
                             </Tippy>
                             <Tippy delay={[0, 100]} content="Messages" placement="bottom">
