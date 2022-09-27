@@ -9,6 +9,7 @@ import FollowingPage from '~/pages/Following/Following';
 import ProfilePage from '~/pages/Profile/Profile';
 import UploadPage from '~/pages/Upload/Upload';
 import SearchPage from '~/pages/Search/Search';
+import LivePage from '~/pages/Live/Live';
 
 const publicRoute = [
     {
@@ -32,6 +33,10 @@ const publicRoute = [
         path: config.routes.search,
         component: SearchPage,
         layout: null,
+    },
+    {
+        path: config.routes.live,
+        component: LivePage,
     },
 ];
 
