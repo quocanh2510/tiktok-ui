@@ -5,17 +5,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 2px 0 16px;
+    padding-left: 16px;
     border-radius: 92px;
     overflow: hidden;
     border: 1.5px solid transparent;
 
     input {
+        font-family: var(--font-family);
         caret-color: var(--primary-color);
         background-color: transparent;
         height: 100%;
         flex: 1;
         font-size: 1.6rem;
+        padding-right: 50px;
     }
 
     input:not(:placeholder-shown) ~ .search-btn {
@@ -28,12 +30,20 @@
 }
 
 .clear {
-    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 68px;
     transform: translateY(-50%);
+    cursor: pointer;
+    color: rgba(22, 24, 35, 0.34);
 }
 
 .loading {
+    position: absolute;
+    right: 67px;
+    top: 48%;
     animation: spinner 0.5s linear infinite;
+    color: rgba(22, 24, 35, 0.34);
 }
 
 @keyframes spinner {
@@ -43,14 +53,6 @@
     to {
         transform: translateY(-50%) rotate(360deg);
     }
-}
-
-.clear,
-.loading {
-    position: absolute;
-    right: 68px;
-    top: 50%;
-    color: rgba(22, 24, 35, 0.34);
 }
 
 .search-btn {
